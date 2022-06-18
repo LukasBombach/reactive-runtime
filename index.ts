@@ -5,7 +5,7 @@ const { value, react, log } = createRuntime();
 console.clear();
 
 const num = value(1, 'num');
-const double = value(2, 'double');
+const double = value(null, 'double');
 
 react(() => double.set(2 * num.get()), 'multiDbl');
 
